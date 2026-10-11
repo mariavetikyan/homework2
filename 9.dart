@@ -8,6 +8,7 @@ Future<List<String>> runTasks() async {
   Future<String> taskB = runTask('B', 50);
   Future<String> taskC = runTask('C', 150);
 
+  // ardyunqnery veradardzvum en A, B, C hertakanxamb
   return await Future.wait([taskA, taskB, taskC]);
 }
 
@@ -15,4 +16,3 @@ void main() async {
   List<String> results = await runTasks();
   print(results);
 }
-// thank u for attention 
